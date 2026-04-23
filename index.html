@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohit Bairagi — Portfolio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background -->
+<div class="page-bg"></div>
+
+<!-- ─── NAV ─── -->
+<nav>
+  <a class="nav-logo" href="#hero-main">Rohit.</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero-main">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#hobbies">Hobbies</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- Popup -->
+<div class="popup" id="popup">
+  <span>Nothing found.</span>
+  <button id="popupClose">✕</button>
+</div>
+
+<main id="hero-main">
+
+  <!-- ─── HERO ─── -->
+  <div id="hero">
+    <div class="hero-left">
+      <p class="hero-eyebrow">Software Developer</p>
+      <h1 class="hero-heading">
+        <span class="line1">Hello, I Am</span>
+        <span class="line2">Rohit Bairagi</span>
+      </h1>
+      <p class="hero-sub">
+        B.Voc Software Development student at DDU KK, DAVV — Indore.
+        I build clean, functional interfaces and love learning the craft of code.
+      </p>
+      <div class="hero-btns">
+        <a class="btn-pill" href="#projects">View Work</a>
+        <button class="btn-circle" id="scrollBtn" aria-label="Scroll down">
+          <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="arch-wrap">
+        <img
+          src="https://portfoliorohitbairagi.vercel.app/assets/Rectangle%2021.png"
+          alt="Rohit Bairagi"
+          onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(160deg,#888,#444)'"
+        >
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ─── ABOUT ─── -->
+  <section id="about">
+    <p class="tag">01 — About me</p>
+    <div class="about-layout">
+      <div>
+        <div class="stat-block">
+          <span class="stat-num">85.6%</span>
+          <span class="stat-label">12th grade score</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-num">4+</span>
+          <span class="stat-label">Projects built</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-num">6</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <h2 class="section-title" style="margin-bottom:1.5rem;">
+          A passionate<br><em>developer</em> from Indore
+        </h2>
+        <p>
+          I'm Rohit Bairagi, currently pursuing a Bachelor of Vocation (B.Voc) in
+          Software Development at DDU KK, DAVV in Indore. I completed my high school
+          at Abhinav H.S.S. Runija, where I scored 85% in 12th grade.
+        </p>
+        <p>
+          I have hands-on experience with HTML, CSS, JavaScript, Java (results-making
+          system with Core Java and JDBC), React, and SQL. My soft skills include
+          teamwork and time management — and I thrive on self-control and positive thinking.
+        </p>
+        <p>
+          My ambition is to become a software developer at one of the leading companies
+          in the industry. Outside of code, you'll find me reading or on the kabaddi field.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ─── SKILLS ─── -->
+  <section id="skills">
+    <p class="tag">02 — Skills</p>
+    <h2 class="section-title">Technologies I<br><em>work with</em></h2>
+    <div class="skills-grid">
+      <span class="skill-pill">HTML</span>
+      <span class="skill-pill">CSS</span>
+      <span class="skill-pill">JavaScript</span>
+      <span class="skill-pill">Java</span>
+      <span class="skill-pill">React</span>
+      <span class="skill-pill">SQL</span>
+      <span class="skill-pill">JDBC</span>
+      <span class="skill-pill">Git</span>
+      <span class="skill-pill">Core Java</span>
+      <span class="skill-pill">Figma</span>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ─── PROJECTS ─── -->
+  <section id="projects">
+    <p class="tag">03 — Projects</p>
+    <h2 class="section-title">Things I've<br><em>built</em></h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-img">
+          <img src="https://portfoliorohitbairagi.vercel.app/assets/Library%20website.png" alt="Library Website" onerror="this.style.display='none'">
+        </div>
+        <div class="project-body">
+          <span class="project-num">01</span>
+          <p class="project-title">Library Website</p>
+          <p class="project-desc">A UI/UX design for a library management portal — clean layout with intuitive browsing experience, designed in Figma.</p>
+          <button class="project-link" data-project="library">View Project &nbsp;→</button>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img">
+          <img src="https://portfoliorohitbairagi.vercel.app/assets/sport-scout.png" alt="Sport Scout" onerror="this.style.display='none'">
+        </div>
+        <div class="project-body">
+          <span class="project-num">02</span>
+          <p class="project-title">Sport Scout</p>
+          <p class="project-desc">My first HTML website — a sports-themed page exploring layout and styling fundamentals from scratch.</p>
+          <button class="project-link" data-project="sport-scout">View Project &nbsp;→</button>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img">
+          <img src="https://portfoliorohitbairagi.vercel.app/assets/textutile.png" alt="TEXTUtile" onerror="this.style.display='none'">
+        </div>
+        <div class="project-body">
+          <span class="project-num">03</span>
+          <p class="project-title">TEXTUtile</p>
+          <p class="project-desc">My first React application — a text utility tool built to practise React fundamentals and component-based thinking.</p>
+          <button class="project-link" data-project="textutile">View Project &nbsp;→</button>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img">
+          <img src="https://portfoliorohitbairagi.vercel.app/assets/transaction-app.png" alt="Transaction App" onerror="this.style.display='none'">
+        </div>
+        <div class="project-body">
+          <span class="project-num">04</span>
+          <p class="project-title">Transaction App</p>
+          <p class="project-desc">A React-powered transaction management interface for tracking payments and balances in real time.</p>
+          <button class="project-link" data-project="transaction">View Project &nbsp;→</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ─── HOBBIES ─── -->
+  <section id="hobbies">
+    <p class="tag">04 — Beyond code</p>
+    <h2 class="section-title">Things I<br><em>love doing</em></h2>
+    <div class="hobbies-grid">
+
+      <div class="hobby-card">
+        <div class="hobby-icon"><i class="fa fa-person-running"></i></div>
+        <p class="hobby-name">Kabaddi</p>
+        <p class="hobby-desc">Keeps me physically fit, builds teamwork and discipline, and sharpens strategic thinking on the field.</p>
+      </div>
+
+      <div class="hobby-card">
+        <div class="hobby-icon"><i class="fa fa-book-open"></i></div>
+        <p class="hobby-name">Reading</p>
+        <p class="hobby-desc">Read Ikigai and The Power of Habit — books that deeply shaped my thinking and daily habits.</p>
+      </div>
+
+      <div class="hobby-card">
+        <div class="hobby-icon"><i class="fa fa-gamepad"></i></div>
+        <p class="hobby-name">Video Games</p>
+        <p class="hobby-desc">Enjoy immersive storytelling and strategy — gaming sharpens reaction time and problem-solving skills.</p>
+      </div>
+
+      <div class="hobby-card">
+        <div class="hobby-icon"><i class="fa fa-seedling"></i></div>
+        <p class="hobby-name">Gardening</p>
+        <p class="hobby-desc">Growing flowers and fruit plants is a grounding hobby that helps me relax and connect with nature.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ─── CONTACT ─── -->
+  <section id="contact">
+    <p class="tag">05 — Contact</p>
+    <div class="contact-layout">
+
+      <div>
+        <h2 class="contact-big">Let's work<br><em>together</em></h2>
+        <p class="contact-blurb">
+          I'm open to opportunities, collaborations, and conversations.
+          Feel free to reach out — I'd love to connect.
+        </p>
+        <div class="contact-detail">
+          <p class="contact-detail-label">Email</p>
+          <p class="contact-detail-val">rohitbairagitechwork@gmail.com</p>
+        </div>
+        <div class="contact-detail">
+          <p class="contact-detail-label">Phone</p>
+          <p class="contact-detail-val">+91 8349248453</p>
+        </div>
+        <div class="contact-detail">
+          <p class="contact-detail-label">Location</p>
+          <p class="contact-detail-val">Indore, Madhya Pradesh, India</p>
+        </div>
+      </div>
+
+      <div>
+        <p class="tag" style="margin-bottom:0;">Find me on</p>
+        <div class="socials">
+          <a class="social-row" href="https://www.linkedin.com/in/rohit-bairagi-310b76354/" target="_blank">
+            <i class="fab fa-linkedin-in"></i> LinkedIn
+            <span class="arrow">→</span>
+          </a>
+          <a class="social-row" href="https://github.com/RohitBairagi193" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+            <span class="arrow">→</span>
+          </a>
+          <a class="social-row" href="#" target="_blank">
+            <i class="fab fa-twitter"></i> Twitter
+            <span class="arrow">→</span>
+          </a>
+          <a class="social-row" href="#" target="_blank">
+            <i class="fab fa-facebook-f"></i> Facebook
+            <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <span class="logo-ft">Rohit Bairagi</span>
+    <span>© 2024 — All rights reserved</span>
+  </footer>
+
+</main>
+
+<!-- Script -->
+<script src="script.js"></script>
+
+</body>
+</html>
